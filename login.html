@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            background-image:url('img2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            background-color: black;
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            border-radius: 5px;
+            cursor:auto;
+            
+            
+            
+        }
+        .loginpage{
+            color: blanchedalmond;
+            text-align: center;
+            
+        }
+        #login{
+            border-radius: 8px;
+        }
+        #password{
+            border-radius: 8px;
+        }
+        /* hr{
+            width: 200px;
+        } */
+        h5:before,h5:after{
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid  white;
+            margin: auto;
+        }
+        h5{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        h5{
+            margin: 30px;
+            
+        }
+        #or{
+            margin-top: -19px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="loginpage">
+            <h1>login</h1>
+            <p>
+                <input type="email"  id="login" placeholder="e-mail*" required>
+        </p>
+        <p>
+            <input type="password" id="password"  placeholder="Password*"  pattern=".{6,}" title="atleast 6 characters"  required>
+        </p>
+        <p>
+            <input type="submit" value="Login" >
+        </p>
+        <!-- <hr > -->
+        <h5>OR</h5>
+        <p id="or">
+            <a href="https://www.google.com" target="_blank">Forget Password?</a>
+        </p>
+        <p id="signup"> 
+            Don't have an account?
+            <a href="signup.html" target="_blank">Sign Up</a>
+        </p>
+        
+        
+    </div>
+    </form>
+    
+</body>
+</html>
