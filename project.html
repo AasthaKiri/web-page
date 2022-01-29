@@ -8,12 +8,13 @@
     <style>
         body {
             background-image: url('image1.j ifi');
+            
         }
         .navbar{
-            padding: 20px;
+            padding: 15px;
             background-color:rgb(128, 163, 163);
-            /* margin-right: 20px; */
-            word-spacing: 10px;
+            /* word-spacing: 10px; */
+            display: block;
         }
         .page{
             width: auto;
@@ -42,42 +43,109 @@
             overflow-x:scroll ;
             /* -ms-overflow-style: none; */
         }
-        
-        
-        
-
+        .taskbar{
+            display:inline;
+        }
+        .taskbar li{
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        .taskbar li a{
+            padding: 9px;
+            color: black;
+            text-decoration:none;
+            
+        }
+        .taskbar li a:hover  {
+            /* background-color: rgb(92, 14, 14); */
+            border-radius: 50px;
+            text-shadow: 2px 2px 10px;
+            text-shadow: blur;
+        }
+        .navbar li a.active{
+            background-color: rgb(0, 89, 255);
+            border-radius: 50px;
+        }
+        .btn{
+            /* display: inline-block; */
+            right: 100px;
+            top: 15px;
+            position:absolute;
+            /* height: 15px; */
+            float: right;
+            /* display: inline; */
+            padding:8px;
+            padding-top:center ;
+            padding-bottom:center;
+        }
+        .button{
+            background-color: inherit;
+            border-radius: 40px;
+            font-size: 15px;
+            margin-left: 10px;
+            /* margin-top: center;
+            margin-bottom: center; */
+            
+        }
+        .btn :hover{
+            font-size: 21px;
+            padding: 1px;
+           
+        } 
+        .button a{
+            text-decoration: none;
+            color: black;
+        }
+            
     </style>
 </head>
 <body>
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="#home" >Home</a>
         <a href="#tvshows">TV Shows</a>
         <a href="#movies">Movies</a>
         <a href="#originals">Originals</a>
         <a href="#channels">Channels</a>    
-    </div>
-    <div class="page">
-        <div class="list">
-            <h3>Movies</h3>
-            <table>
-                <tr >
-                    <td><img src="movie.png"> Tanhaj</td>
-                    <td><img src="movie 2 .png">Iron Man</td>
-                    <td><img src="movie 3.png">Bey Yaar</td>
-                    <td><img src="movie 4.png">Room</td>
-                    <td><img src="movie 5.png">Divergent</td>
-                    
-                    <td><img src="movie.png"> Tanhaj</td>
-                    <td><img src="movie 2 .png">Iron Man</td>
-                    <td><img src="movie 3.png">Bey Yaar</td>
-                    <td><img src="movie 4.png">Room</td>
-                    <td><img src="movie 5.png">Divergent</td>
-                </tr>
-            </table>
+    </div> -->
+    <header class="header">
+        <div class="navbar">
+            <ul class="taskbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TvShows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Originals</a></li>
+                <li><a href="#">Channels </a></li>
+            </ul>  
         </div>
-        <div class="list">
-            <h3>Series</h3>
-            <table>
+        <div class="btn">
+            <button class="button" ><a href="signup.html" target="_blank">Sign Up</a></button>
+            <button class="button"><a href="login.html" target="_blank">Login</a></button>
+        </div>
+    </header>
+        <div class="page">
+            <div class="list">
+                <h3>Movies</h3>
+                <table>
+                    <tr >
+                        <td><img src="movie.png"> Tanhaj</td>
+                        <td><img src="movie 2 .png">Iron Man</td>
+                        <td><img src="movie 3.png">Bey Yaar</td>
+                        <td><img src="movie 4.png">Room</td>
+                        <td><img src="movie 5.png">Divergent</td>
+                        
+                        <td><img src="movie.png"> Tanhaj</td>
+                        <td><img src="movie 2 .png">Iron Man</td>
+                        <td><img src="movie 3.png">Bey Yaar</td>
+                        <td><img src="movie 4.png">Room</td>
+                        <td><img src="movie 5.png">Divergent</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="list">
+                <h3>Series</h3>
+                <table>
                 <tr >
                     <td><img src="movie.png"> Tanhaj</td>
                     <td><img src="movie 2 .png">Iron Man</td>
