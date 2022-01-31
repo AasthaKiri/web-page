@@ -17,22 +17,121 @@
             font-family: cursive;
         } */
         nav{
-            background:cornflowerblue;
+            background: #0082e6;
             height: 80px;
             width: 100%;
         }
+        .logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 7px 13px;
+            border-radius: 5px;
+        }
+        a.active{
+            background-color: #09538b;
+            transition: .5s;
+        }
+        a:hover{
+            background-color: #09538b;
+            transition: .5s;/* the lesst the time the faster it will be  */
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+
+        @media(max-width: 952px){
+            .logo{
+                font-size: 30px;
+                padding-left: 50px;
+
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+
+        }
+
+        @media(max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;  
+            }
+            a:hover,a.active{
+                background-color: none;
+                color:#0082e6 ;
+            }
+            #check :checked ~ ul{
+                left: 0;
+            }
+        }
+        section{
+            background: url("img2.jpg") no-repeat;
+            background-size: cover; 
+            height: calc(100vh - 80px);
+
+        }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
 </head>
 <body>
     <nav>
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
         <label class="logo">EasyPick</label>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TvShows</a></li>
-            <li><a href="#">Channels</a></li>
-            <li><a href="#">Originals</a></li>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">movies</a></li>
+            <li><a href="#">tvshows</a></li>
+            <li><a href="#">channels</a></li>
+            <li><a href="#">originals</a></li>
         </ul>
     </nav>
+    <section></section>
 </body>
 </html>
